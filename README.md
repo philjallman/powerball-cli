@@ -3,10 +3,10 @@ Interactive CLI to manage a Powerball game
 
 Run `python main.py` to launch the interface, which will accept the following commands:
 ```
-    list                    list all player\'s Powerball numbers
-    add <full name>         add or overwrite a player\'s Powerball numbers (name optional)
+    list                    list all player's Powerball numbers
+    add <full name>         add or overwrite a player's Powerball numbers (name optional)
     delete <full name>      delete a player (name optional)
-    powerball               display all players\' Powerball numbers and the winning numbers
+    powerball               display all players' Powerball numbers and the winning numbers
     help <cmd>              show docstring of <cmd>
     exit                    save the current Powerball numbers to {0} and exit
 ```
