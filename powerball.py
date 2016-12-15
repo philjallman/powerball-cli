@@ -5,6 +5,7 @@ import random
 import config
 from ordinal import ordinal
 
+
 class Powerball(cmd.Cmd):
     """Command line Powerball tool"""
 
@@ -81,9 +82,15 @@ class Powerball(cmd.Cmd):
             print '{0} not found!\nUse \'list\' to view current Powerball entries'.format(full_name)
             return
 
+
     def do_add(self, arg):
         """Add a or replace a player's Powerball numbers"""
-        full_name = ''
+        if arg:
+            full_name = arg
+        else:
+            full_name = ''
+
+        # If the arg is missing or just empty space, prompt for first and last name
         while len(full_name.strip()) == 0:
             first_name = raw_input('First name: ')
             last_name = raw_input('Last name: ')
